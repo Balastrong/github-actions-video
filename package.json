@@ -1,0 +1,14 @@
+{
+  "name": "github-actions-video",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "ava"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ava": "^5.1.0"
+  }
+}
