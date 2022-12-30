@@ -1,0 +1,31 @@
+name: Create custom build
+
+on:
+  workflow_dispatch:
+    inputs:
+      customerName:
+        description: Add the name of the customer for this build
+        type: string
+        required: true
+      isPremium:
+        description: "Adds premium features to the build"
+        type: boolean
+        required: false
+      preferredTheme:
+        description: "Frontend theme"
+        type: choice
+        default: "light"
+        options:
+          - "dark"
+          - "light"
+          - "high-contrast"
+    
+jobs:
+  build-artifact:
+    runs-on: ubuntu-latest
+
+    steps:
+      - run: |
+          echo "Building for ${{ github.event.inputs.customerName }}"
+          echo "Premium customer: ${{ github.event.inputs.isPremium }}"
+          echo "Selected theme: ${{ github.event.inputs.preferredTheme }}"
