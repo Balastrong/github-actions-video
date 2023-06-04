@@ -6,11 +6,10 @@ on:
 
 jobs:
   label:
-    runs-on: ubuntu-latest
-    env:
-      gh-token: ${{ secrets.GITHUB_TOKEN }}
+    runs-on: ubuntu-latest      
     steps:
       - uses: actions/checkout@main
       - uses: Balastrong/github-typescript-action-test@main
         with:
           label: needs-review
+          gh-token: ${{ secrets.GITHUB_TOKEN }}
