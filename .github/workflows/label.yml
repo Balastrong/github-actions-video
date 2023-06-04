@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@main
-      - uses: Balastrong/gh-aciton-test@latest
+      - uses: Balastrong/github-typescript-action-test@latest
         with:
           gh-token: ${{ secrets.GH_TOKEN }}
           label: needs-review
