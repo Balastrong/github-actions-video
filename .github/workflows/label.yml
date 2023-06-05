@@ -3,6 +3,7 @@ name: Label PR
 on:
   pull_request:
     types: [opened, reopened]
+  workflow_dispatch:    
 
 jobs:
   label:
@@ -11,5 +12,5 @@ jobs:
       - uses: actions/checkout@main
       - uses: Balastrong/github-typescript-action-test@main
         with:
-          label: needs-review
+          label: "needs-review"
           gh-token: ${{ secrets.GITHUB_TOKEN }}
