@@ -1,3 +1,3 @@
-    console.log("Hello World!");
+console.log("Hello World!");
 
-    var a = 42;
+//var a = 42;
