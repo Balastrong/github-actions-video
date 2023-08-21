@@ -1,0 +1,45 @@
+name: Bug Report
+description: Report a bug
+title: "[BUG] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please fill out the sections below to help us reproduce and fix the bug you are encountering.
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe your issue
+      placeholder: When I click here it happens this
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Go to page X
+        2. Click here
+        3. Click there
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What was the expected result?
+      placeholder: I expected this to happen
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Put here any screenshots or videos (optional)
+    validations:
+      required: true
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Extra fields
+      options:
+        - label: I want to work on this issue
