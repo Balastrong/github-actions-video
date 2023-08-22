@@ -35,11 +35,48 @@ body:
     id: screenshots
     attributes:
       label: Put here any screenshots or videos (optional)
-    validations:
-      required: true
   - type: checkboxes
     id: terms
     attributes:
       label: Extra fields
       options:
+        - label: I have used the search function to check if an issue already exists
+          required: true
         - label: I want to work on this issue
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting this issue! We will get back to you as soon as possible.
+  - type: markdown
+    attributes:
+      value: "## More inputs"
+  - type: markdown
+    attributes:
+      value: |
+        You better not add too many required fields, as it will discourage people from reporting issues.
+        Anyway, this was just to test what the issue form can do so...
+        Let's add some more inputs!
+  - type: input
+    id: input
+    attributes:
+      label: A simple input
+      placeholder: Add something that fits one line
+  - type: dropdown
+    id: seniority
+    attributes:
+      label: Select your seniority
+      options:
+        - Junior
+        - Mid
+        - Senior
+        - Staff
+  - type: dropdown
+    id: browser
+    attributes:
+      label: You can select more options here
+      multiple: true
+      options:
+        - Chrome
+        - Firefox
+        - Safari
+        - Edge
