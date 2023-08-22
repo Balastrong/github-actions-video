@@ -1,16 +1,17 @@
 name: Bug Report
 description: Report a bug
+title: "[BUG] "
 labels: ["bug"]
 body:
   - type: markdown
     attributes:
       value: |
-        Please fill out the sections below to help everyone identify and fix the bug
+        Please fill out the sections below to help us reproduce and fix the bug you are encountering.
   - type: textarea
     id: description
     attributes:
       label: Describe your issue
-      placeholder: When I click here this happens
+      placeholder: When I click here it happens this
     validations:
       required: true
   - type: textarea
@@ -35,14 +36,47 @@ body:
     attributes:
       label: Put here any screenshots or videos (optional)
   - type: checkboxes
-    id: checks
+    id: terms
     attributes:
       label: Extra fields
       options:
         - label: I have used the search function to check if an issue already exists
           required: true
-        - label: I'd like to work on this issue
+        - label: I want to work on this issue
   - type: markdown
     attributes:
       value: |
         Thanks for reporting this issue! We will get back to you as soon as possible.
+  - type: markdown
+    attributes:
+      value: "## More inputs"
+  - type: markdown
+    attributes:
+      value: |
+        You better not add too many required fields, as it will discourage people from reporting issues.
+        Anyway, this was just to test what the issue form can do so...
+        Let's add some more inputs!
+  - type: input
+    id: input
+    attributes:
+      label: A simple input
+      placeholder: Add something that fits one line
+  - type: dropdown
+    id: seniority
+    attributes:
+      label: Select your seniority
+      options:
+        - Junior
+        - Mid
+        - Senior
+        - Staff
+  - type: dropdown
+    id: browser
+    attributes:
+      label: You can select more options here
+      multiple: true
+      options:
+        - Chrome
+        - Firefox
+        - Safari
+        - Edge
