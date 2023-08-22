@@ -1,7 +1,8 @@
-name: Bug Report
-description: Report a bug
-title: "[BUG] "
-labels: ["bug"]
+name: GitHub Issue forms test
+description: Guided issue forms test
+title: "[Prefix] "
+labels: ["bug", "help wanted"]
+assignees: ["Balastrong"]
 body:
   - type: markdown
     attributes:
