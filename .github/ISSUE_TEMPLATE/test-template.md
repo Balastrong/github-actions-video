@@ -1,6 +1,7 @@
 ---
 title: Test template
-name: Test
+name: Test Name
+about: Test about
 ---
 
 Template body
