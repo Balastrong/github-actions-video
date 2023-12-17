@@ -91,5 +91,3 @@ body:
         - MacPorts
         - apt-get
       default: 0
-    validations:
-      required: true
