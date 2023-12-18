@@ -91,4 +91,4 @@ body:
         - Homebrew
         - MacPorts
         - apt-get
-      default: apt-get
+      default: 0
