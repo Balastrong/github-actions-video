@@ -17,7 +17,7 @@ jobs:
       - name: Fetch
         id: fetch
         run: |
-          response=$(curl -X POST -H "Content-Type: application/json" -d @src/path/config.json google.com); echo "response=$response" >> $GITHUB_OUTPUT
+          response="Mario"; echo "response=$response" >> $GITHUB_OUTPUT
   fail:
     needs: validate
     runs-on: ubuntu-latest
